@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="albertmage" translate="label" sortOrder="400">
+            <label>PHPDIGITAL</label>
+        </tab>
+        <section id="albert_sms" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1"
+                 showInStore="0">
+            <class>separator-top</class>
+            <label>SMS</label>
+            <tab>albertmage</tab>
+            <resource>AlbertMage_Sms::config</resource>
+            <group id="trial" translate="label" type="text" sortOrder="5" showInWebsite="1" showInStore="0"
+                   showInDefault="1">
+                <frontend_model>Dotdigitalgroup\Email\Block\Adminhtml\Config\Trial</frontend_model>
+            </group>
+        </section>
+    </system>
+</config>
